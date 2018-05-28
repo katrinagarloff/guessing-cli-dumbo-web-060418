@@ -1,12 +1,11 @@
 # Code your solution here!
-def run_guessing_game
+def run_guessing_game(num_to_guess)
   puts "Guess a number between 1 and 6"
   guess = gets.chomp
  
   loop do
   puts "Guess a number between 1 and 6."
   guess = gets.chomp
-  num_to_guess = 1+rand(6)
   
   if guess.to_i == num_to_guess 
     puts "You guessed the correct number!"
