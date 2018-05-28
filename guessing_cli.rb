@@ -9,9 +9,9 @@ def run_guessing_game
   num_to_guess = 1+rand(6)
   
   if guess.to_i == num_to_guess 
-    "You guessed the correct number!"
+    puts "You guessed the correct number!"
 elsif guess.to_i != num_to_guess && guess != "exit"
-  "The computer guessed #{num_to_guess}"
+  puts "The computer guessed #{num_to_guess}"
   elsif guess == "exit"
   puts "Goodbye!"
 end
